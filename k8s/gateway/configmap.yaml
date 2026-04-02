@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gateway-config
+  namespace: ai-gateway
+data:
+  REDIS_URL: "redis://redis:6379"
+  DATABASE_URL: "postgresql://postgres:postgres@postgres:5432/gatewaydb"
+  RATE_LIMIT_REQUESTS: "100"
+  RATE_LIMIT_WINDOW_SECONDS: "3600"
+  LANGFUSE_HOST: "https://cloud.langfuse.com"

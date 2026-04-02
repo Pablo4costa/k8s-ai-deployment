@@ -1,0 +1,3 @@
+# Secrets
+k8s/gateway/secret.yaml
+venv/
